@@ -1,0 +1,160 @@
+1.text-align:center
+2.display flex
+3.background-image
+4.color
+5.<a href=""></a>
+6.<h1><h2><h3><h4><h5><h6>
+7.文の段落を区切る機能を持ち、pタグの中に文章を記述することで一つの段落がつくられる。
+8.List Itemの略で、リストの項目を記述する際に使用する。リスト表示したい項目に<LI>タグをつけて<UL>～<UL> または<OL>～<OL>の間に記述する。
+9.date、text、textarea、button
+10.border
+11.text-shadow
+12.カーソルが乗っている要素にスタイルを適用するためのもの（カーソルを乗せると下に沈むなど）
+13.html,body{
+    hight: 100%;    /*高さを100％に設定*/
+}
+.要素{
+    position: absolute;     /*body要素に対して絶対配置*/
+    top: 50%;       /*上端を中央に*/
+    left: 50%;      /*左端を中央に*/
+    width: 300px;   /*横幅*/
+    height: 300px;  /*縦幅*/
+}
+14.「要素を横並び」に出来るCSSのコード
+15.back ground color
+16.CSSインスペクタ
+17.コンピュータの操作画面で、ウインドウや入力要素などを一つ選択し、文字入力や操作を受け付けられる状態にすることをフォーカスという。
+18.指定の要素が特定の状態である場合にスタイルを適用させるセレクタ
+19.検索エンジン上位表示と検索からの集客、収益化を目的に、サイトの内部構造や、htmlタグのソースを検索エンジン用に最適化する作業
+20.<img src="">
+21.ブラウザによってcssが崩れるのを防ぐ
+22.PC、タブレット、スマートフォンなど、複数の異なる画面サイズをWebサイト表示の判断基準にし、ページのレイアウト・デザインを柔軟に調整することを指す。
+23.画面の解像度 といった条件に対応してコンテンツの描画が行えるようにするCSS3のモジュール
+24.行の高さを指定
+25.
+
+php
+1.数字を先に持ってくること
+2.コードがすっきりする
+3.規定した条件に応じて処理を変えること
+4.ランダムで数字を選ぶ
+5.〇
+6.SELECT、DELETE
+7.;
+8.echoのあとの文字列が表示される
+9.10、24
+10.8、15、0.2
+11.POST
+12.蓄積・検索・更新などに便利なように有機的に整理された情報の集まり。
+13.テーブルのすべてを表示させる
+14.nameとemailのデータを降順に表示させる
+15.id1のデータの名前を就職キャンプ１に更新する
+16.a_tableを削除する
+17.action "データを飛ばすページ.php"
+18.XAMPP
+19.通信ネットワークにおける位置関係を示す用語の一つで、利用者や稼働中のソフトウェアにとって、自らの側のコンピュータや端末のこと
+20.〇
+
+js
+1.
+<div id="box"><p id="text">クリック</p></div>
+document.getElementById("text-button").onclick = function() {
+    document.getElementById("text").innerHTML = "クリックされた！";
+  };
+2.
+背景：document.getElementById('box').style.backgroundColor = 'red';
+文字色：document.getElementById("id名").style.color = blue;
+3.var 目的名 = $('.目的名').val();と記載
+4.ECMA Internationalのもとで標準化されているJavaScriptの仕様であり2015年にリリースされたもの
+5.js:プロトタイプベースのオブジェクト指向スクリプト言語
+  jquery:プログラミング言語ではなくライブラリと呼ばれるプログラムの集合体であり多数の命令文が定義されているため、それらを呼び出す事で複雑な動作でも簡単に実装できるようになっている。
+6.cssメソッド
+7.var a0 = [];
+console.log(a0.length);  // 0 と表示
+8.与えられた関数を配列のすべての要素に対して呼び出し、その結果からなる新しい配列を生成。
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+9.引数として与えられたテスト関数を各配列要素に対して実行し、それに合格したすべての配列要素からなる新しい配列を生成。
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+10.エラーが起きた時などのメッセージボックス
+11.jQueryを読み込んでから、プログラムを読み込む
+12.モバイルおよび Web アプリケーションのバックエンドサービス
+13.
+const newPostRef = firebase.database().ref();
+$("#send").on("click",function(){
+  newPostRef.push({
+    username:$("#username").val(),
+    text:$("#text").val(),
+  })
+  $("#username").val("");
+  $("#text").val("");
+})
+14.
+newPostRef.on("child_added", function (data) {
+let v = date.val();
+let k = date.key;
+
+let str = `<p>${v.username}<br>${v.text}<p>`;
+$("#output").prepend(str);
+})
+
+$("#text").on("keydown", function (e) {
+console.log(e.keyCode)
+
+if(e.keyCode === 13){
+newPostRef.push({
+    username:$("#username").val(),
+    text:$("#text").val(),
+  })
+  $("#username").val("");
+  $("#text").val("");
+}
+})
+15.javascript利用することでユーザーのデータをwebブラウザ(ローカル環境)に保存することができる仕組み
+16.小数点以下を切り捨てます。 引数には数値を指定します。 文字列を指定すると NaN を返します。 空文字やnullを指定すると 0 を返します。
+17.(in place で) 既存の要素を取り除いたり、置き換えたり、新しい要素を追加したりすることで、配列の内容を変更します。
+18.指定した separator 文字列を使って分割する箇所を決定し、文字列を複数の部分文字列に区切ることにより String オブジェクトを文字列の配列に分割します。
+19.配列から値を取り出して、あるいはオブジェクトからプロパティを取り出して別個の変数に代入することを可能にする JavaScript の式です。
+// 姓名の配列があります
+let arr = ["Ilya", "Kantor"]
+
+// 分割代入
+let [firstName, surname] = arr;
+
+alert(firstName); // Ilya
+alert(surname);  // Kantor
+20....fooの形で記述され、配列やオブジェクトの要素を文字通り展開する構文
+21.　=>(矢)を使って関数リテラル（ソースコードに直接べた書きされた関数のこと。）を記述します。
+22.配列の末尾に 1 つ以上の要素を追加すること
+23.Deno、Entropic
+24.Aurelia
+25.
+js:人が何かしたいと思った際の便利な仕組みを提供したり、視覚的なギミックを作成する
+php:裏でのデータ処理
+
+その他
+1.サイト：情報が記載されているだけ
+サービス：ユーザーが受け身でサイトを使用するのではなく、積極的に参加することを意味します。ユーザーは検索、ボタンのクリック、フォームの入力、購入などの操作を行える。
+2.html、php、css、js
+3.fiebase、phpmyadmin、
+4.
+プログラムがその機能をほかのプログラムから利用できるように公開するインターフェイスのことを指します。
+APIを利用する時、ユーザは決められた手続きに従って「このデータが欲しい」とサーバに命令すると、受け取ったサーバは、ユーザの命令に従ってデータの参照や加工を行い、ユーザに返します。
+複雑なプログラミングの知識や膨大なデータベースを持っていなくても、命令を知っていればそれらを利用することができるという点に特徴があります。
+5.自分が作ったものをネット上にUPして公開することができる
+6.アップロード
+7.新しくアップするページを作成する
+8.全世界に公開し、自分の作成したものを見てもらえる。
+9.WEBサイトの裏側、ユーザーが意識しない、サイト内部の処理
+10.WEBサイトユーザーが見えている部分のところ、WEBサイトのデザインを含めたインターフェイス部分を開発していくエンジニア
+11.４月からサーバーエンジニアとして働きますがアプリ作成の部分も知ることができ、これからの体験に生かせることがよかったです。
